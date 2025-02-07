@@ -1,4 +1,14 @@
-## Hi there 👋
+# 👋 Hi, I'm Pratham Savaliya
+
+🚀 **ML Engineer | Deep Learning | CUDA Programming | Speech Technology**
+
+- 🔭 I'm passionate about building and deploying state-of-the-art AI systems, implementing architectures from scratch, and solving real-world problems. I specialize in deep learning, NLP, speech processing, and parallel computing.
+
+## 🔥 Skills & Technologies
+
+- **Programming Languages:** CUDA, C/C++, Python  
+- **Technologies:** Deep Learning, Computer Vision, Speech Technology, Fine-Tuning, Parallel Programming, MLOps  
+- **Frameworks & Tools:** PyTorch, FastAPI, Flask, Django, Docker, Git/GitHub  ## Hi there 👋
 
 <!--
 **01PrathamS/01PrathamS** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
