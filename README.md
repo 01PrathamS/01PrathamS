@@ -2,7 +2,7 @@
 
 🚀 **ML Engineer | Deep Learning | CUDA Programming | Speech Technology**
 
-- 🔭 I'm passionate about building and deploying state-of-the-art AI systems, implementing architectures from scratch, and solving real-world problems. I specialize in deep learning, NLP, speech processing, and parallel computing.
+- 🔭 I'm passionate about building and deploying state-of-the-art AI systems, implementing architectures from scratch, and solving real-world problems, tinkering with deep learning, NLP, speech processing, and parallel computing.
 
 ## 🔥 Skills & Technologies
 
