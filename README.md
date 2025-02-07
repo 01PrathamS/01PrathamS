@@ -8,7 +8,7 @@
 
 - **Programming Languages:** CUDA, C/C++, Python  
 - **Technologies:** Deep Learning, Computer Vision, Speech Technology, Fine-Tuning, Parallel Programming, MLOps  
-- **Frameworks & Tools:** PyTorch, FastAPI, Flask, Django, Docker, Git/GitHub  ## Hi there 👋
+- **Frameworks & Tools:** PyTorch, FastAPI, Flask, Django, Docker, Git/GitHub  
 
 <!--
 **01PrathamS/01PrathamS** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
