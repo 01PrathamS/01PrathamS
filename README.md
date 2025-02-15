@@ -2,7 +2,7 @@
 
 🚀 **ML Engineer | Deep Learning | CUDA Programming | Speech Technology**
 
-- 🔭 I'm curious to studying and implementing state-of-the-art AI systems, implementing architectures from scratch and solving real-world problems.
+- 🔭 I'm curious to studying and experimenting with state-of-the-art AI systems, implementing architectures from scratch and solving real-world problems.
 - 👯 Hacking for fun n tinkering with deep learning, NLP, speech processing, and parallel computing.
 
 ## 🔥 Skills & Technologies
