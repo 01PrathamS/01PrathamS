@@ -1,4 +1,4 @@
-# 👋 Hi, I'm Akshit Movaliya
+# 👋 Hi, I'm Pratham Savaliya
 
 🚀 **ML Engineer | Deep Learning | CUDA Programming | Speech Technology**
 
