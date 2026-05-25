@@ -18,7 +18,7 @@ Live sales coaching, cross-session memory with contradiction detection, post-cal
 
 ## Open Source
 
-**Chronicle** · Self-hostable wearable AI backend · 60+ ⭐ · Active contributor
+**[Chronicle](https://github.com/chronicler-ai/chronicle/)** · Self-hostable wearable AI backend · 60+ ⭐ · Active contributor
 
 - Added Google Drive, Dropbox, and WebSocket as first-class audio sources; co-designed plugin architecture for third-party apps
 - Built speaker diarisation + identification benchmark suite — measures accuracy, latency, speaker confusion across diverse recordings
