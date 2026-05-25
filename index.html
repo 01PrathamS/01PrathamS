@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pratham Savaliya</title>
+  <meta name="description" content="ML Engineer. I ship things that run in production, break them, fix them, and learn faster that way." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      background: #fafaf9;
+      color: #111827;
+      font-size: 15px;
+      line-height: 1.65;
+      padding: 0 1.25rem;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    .container {
+      max-width: 700px;
+      margin: 0 auto;
+      padding: 4.5rem 0 7rem;
+    }
+
+    /* ── Header ── */
+    header { margin-bottom: 3.5rem; }
+
+    h1 {
+      font-size: 1.5rem;
+      font-weight: 600;
+      letter-spacing: -0.02em;
+      color: #111827;
+    }
+
+    .subtitle {
+      margin-top: 0.2rem;
+      font-size: 0.875rem;
+      color: #9ca3af;
+    }
+
+    .bio {
+      margin-top: 0.9rem;
+      color: #374151;
+      font-size: 0.9375rem;
+      max-width: 540px;
+    }
+
+    .links {
+      margin-top: 1rem;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.25rem 0.9rem;
+    }
+
+    .links a {
+      font-size: 0.875rem;
+      color: #6b7280;
+      text-decoration: none;
+      border-bottom: 1px solid #e5e7eb;
+      padding-bottom: 1px;
+      transition: color 0.12s, border-color 0.12s;
+    }
+
+    .links a:hover { color: #111827; border-color: #6b7280; }
+
+    /* ── Sections ── */
+    section { margin-bottom: 0; }
+
+    section + section {
+      margin-top: 2.75rem;
+      padding-top: 2.75rem;
+      border-top: 1px solid #e5e7eb;
+    }
+
+    h2 {
+      font-size: 0.7rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: #9ca3af;
+      margin-bottom: 1.5rem;
+    }
+
+    /* ── Project block ── */
+    .project { margin-bottom: 1.75rem; }
+    .project:last-child { margin-bottom: 0; }
+
+    .project-header {
+      display: flex;
+      align-items: baseline;
+      flex-wrap: wrap;
+      gap: 0.5rem 0.75rem;
+      margin-bottom: 0.4rem;
+    }
+
+    .project-name {
+      font-size: 0.9375rem;
+      font-weight: 600;
+      color: #111827;
+    }
+
+    .project-name a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    .project-name a:hover { text-decoration: underline; }
+
+    .project-meta {
+      font-size: 0.8rem;
+      color: #9ca3af;
+    }
+
+    .project-desc {
+      font-size: 0.875rem;
+      color: #374151;
+      line-height: 1.7;
+    }
+
+    /* ── Bullet list ── */
+    ul { list-style: none; margin-top: 0.5rem; }
+
+    ul li {
+      font-size: 0.875rem;
+      color: #374151;
+      padding: 0.275rem 0 0.275rem 1.1rem;
+      position: relative;
+      line-height: 1.65;
+    }
+
+    ul li::before {
+      content: '—';
+      position: absolute;
+      left: 0;
+      color: #d1d5db;
+    }
+
+    ul li strong { color: #111827; font-weight: 500; }
+
+    /* ── From Scratch grid ── */
+    .scratch-note {
+      font-size: 0.8125rem;
+      color: #9ca3af;
+      margin-bottom: 1.25rem;
+    }
+
+    .implementations {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 0;
+    }
+
+    .impl-item {
+      padding: 0.5rem 0;
+      border-bottom: 1px solid #f3f4f6;
+      padding-right: 1.5rem;
+    }
+
+    .impl-item a {
+      font-size: 0.875rem;
+      font-weight: 500;
+      color: #111827;
+      text-decoration: none;
+      display: block;
+    }
+
+    .impl-item a:hover { text-decoration: underline; }
+
+    .impl-item span {
+      font-size: 0.8rem;
+      color: #9ca3af;
+      display: block;
+      margin-top: 0.05rem;
+    }
+
+    .scratch-extra {
+      font-size: 0.8125rem;
+      color: #6b7280;
+      margin-top: 1.1rem;
+    }
+
+    /* ── Stack ── */
+    .stack-row {
+      display: flex;
+      gap: 0.75rem;
+      margin-bottom: 0.65rem;
+      align-items: flex-start;
+    }
+
+    .stack-label {
+      font-size: 0.8rem;
+      color: #9ca3af;
+      font-weight: 500;
+      min-width: 110px;
+      padding-top: 0.22rem;
+      flex-shrink: 0;
+    }
+
+    .tags { display: flex; flex-wrap: wrap; gap: 0.35rem; }
+
+    .tag {
+      font-size: 0.8rem;
+      background: #f3f4f6;
+      color: #374151;
+      padding: 0.175rem 0.5rem;
+      border-radius: 4px;
+    }
+
+    /* ── More list ── */
+    .more-item {
+      font-size: 0.875rem;
+      color: #374151;
+      padding: 0.3rem 0 0.3rem 1.1rem;
+      position: relative;
+      line-height: 1.65;
+    }
+
+    .more-item::before {
+      content: '—';
+      position: absolute;
+      left: 0;
+      color: #d1d5db;
+    }
+
+    .more-item a {
+      color: #374151;
+      text-decoration: none;
+      border-bottom: 1px solid #e5e7eb;
+      padding-bottom: 1px;
+    }
+
+    .more-item a:hover { color: #111827; border-color: #6b7280; }
+
+    /* ── Footer ── */
+    footer {
+      margin-top: 3.5rem;
+      padding-top: 2rem;
+      border-top: 1px solid #e5e7eb;
+      font-size: 0.875rem;
+      color: #9ca3af;
+    }
+
+    /* ── Responsive ── */
+    @media (max-width: 500px) {
+      .implementations { grid-template-columns: 1fr; }
+      .stack-row { flex-direction: column; gap: 0.35rem; }
+      .stack-label { min-width: unset; }
+      .container { padding: 3rem 0 5rem; }
+    }
+  </style>
+</head>
+<body>
+<div class="container">
+
+  <header>
+    <h1>Pratham Savaliya</h1>
+    <p class="subtitle">ML Engineer &middot; Bengaluru</p>
+    <p class="bio">I ship things that run in production, break them, fix them, and learn faster that way.</p>
+    <nav class="links">
+      <a href="mailto:pratham.savaliya01@gmail.com">Email</a>
+      <a href="https://linkedin.com/in/pratham-savaliya" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="https://github.com/01PrathamS" target="_blank" rel="noopener">GitHub</a>
+      <a href="https://helpish.xyz" target="_blank" rel="noopener">helpish.xyz</a>
+      <a href="https://www.goodreads.com/user/show/190712080-pratham-savaliya" target="_blank" rel="noopener">Goodreads</a>
+      <a href="https://www.youtube.com/@PrathamHacks-dn4wx" target="_blank" rel="noopener">YouTube</a>
+    </nav>
+  </header>
+
+  <!-- SHIPPED -->
+  <section>
+    <h2>Shipped</h2>
+
+    <div class="project">
+      <div class="project-header">
+        <span class="project-name"><a href="https://helpish.xyz" target="_blank" rel="noopener">Helpish</a></span>
+        <span class="project-meta">Solo-built &middot; Production &middot; 1,000+ min processed</span>
+      </div>
+      <p class="project-desc">
+        Meeting intelligence. Layered async pipeline — audio capture &rarr; transcription &rarr; analysis &rarr; persistence, each stage independently swappable. Browser recorder with mic + tab audio mixing, live transcription via Deepgram, speaker diarisation, and voice profile embeddings. Live sales coaching that tracks pitch coverage and surfaces client signals in real time. Cross-session memory with contradiction detection, visual timeline, and shared collaborator access.
+      </p>
+    </div>
+
+  </section>
+
+  <!-- OPEN SOURCE -->
+  <section>
+    <h2>Open Source</h2>
+    <div class="project">
+      <div class="project-header">
+        <span class="project-name">Chronicle</span>
+        <span class="project-meta">Self-hostable wearable AI backend &middot; 60+ ★ &middot; Active contributor</span>
+      </div>
+      <ul>
+        <li>Added Google Drive, Dropbox, and WebSocket as first-class audio sources; co-designed plugin architecture enabling third-party apps to build on the voice AI stack</li>
+        <li>Built speaker diarisation + identification benchmark suite — measures accuracy, latency, and speaker confusion across diverse recordings</li>
+        <li>Implementing MCP connector support enabling Chronicle plugins to interact with external services via natural language tool calls</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- FROM SCRATCH -->
+  <section>
+    <h2>From Scratch</h2>
+    <p class="scratch-note">I implement papers to actually understand them. Each has unit tests validating against reference implementations.</p>
+    <div class="implementations">
+      <div class="impl-item">
+        <a href="https://github.com/01PrathamS/Stable_Diffusion_from_scratch" target="_blank" rel="noopener">Stable Diffusion</a>
+        <span>Full architecture in PyTorch</span>
+      </div>
+      <div class="impl-item">
+        <a href="https://github.com/01PrathamS/Transformers_from_scratch" target="_blank" rel="noopener">Transformers</a>
+        <span>Attention, positional encoding, encoder-decoder</span>
+      </div>
+      <div class="impl-item">
+        <a href="https://github.com/01PrathamS/LoRA-implementation" target="_blank" rel="noopener">LoRA</a>
+        <span>Low-rank adaptation from paper to training</span>
+      </div>
+      <div class="impl-item">
+        <a href="https://github.com/01PrathamS/BERT_from_scratch" target="_blank" rel="noopener">BERT</a>
+        <span>Masked LM + NSP pretraining</span>
+      </div>
+      <div class="impl-item">
+        <a href="https://github.com/01PrathamS/Swin_Transformer_from_scratch" target="_blank" rel="noopener">Swin Transformer</a>
+        <span>Shifted window attention</span>
+      </div>
+      <div class="impl-item">
+        <a href="https://github.com/01PrathamS/GPU_programming" target="_blank" rel="noopener">CUDA / GPU Programming</a>
+        <span>Memory hierarchy, kernels, parallel patterns</span>
+      </div>
+      <div class="impl-item">
+        <a href="https://github.com/01PrathamS/SonicSpeech" target="_blank" rel="noopener">SonicSpeech</a>
+        <span>Deep learning architectures for speech + audio</span>
+      </div>
+      <div class="impl-item">
+        <a href="https://github.com/01PrathamS/Backprop" target="_blank" rel="noopener">Backprop</a>
+        <span>Scalar autograd from scratch</span>
+      </div>
+      <div class="impl-item">
+        <a href="https://github.com/01PrathamS/Dillusion" target="_blank" rel="noopener">Dillusion</a>
+        <span>SOTA diffusion paper implementations</span>
+      </div>
+    </div>
+    <p class="scratch-extra">Also: cross-lingual embedding alignment (English &harr; Hindi/Gujarati) via Procrustes alignment on FastText — word translation and multilingual similarity search in a shared vector space.</p>
+  </section>
+
+  <!-- STACK -->
+  <section>
+    <h2>Stack</h2>
+    <div class="stack-row">
+      <span class="stack-label">ML &amp; Training</span>
+      <div class="tags">
+        <span class="tag">PyTorch</span>
+        <span class="tag">LoRA</span>
+        <span class="tag">SFT</span>
+        <span class="tag">fine-tuning</span>
+        <span class="tag">RAG</span>
+        <span class="tag">GraphRAG</span>
+        <span class="tag">agentic systems</span>
+        <span class="tag">eval pipelines</span>
+      </div>
+    </div>
+    <div class="stack-row">
+      <span class="stack-label">Speech &amp; Audio</span>
+      <div class="tags">
+        <span class="tag">Deepgram</span>
+        <span class="tag">Whisper</span>
+        <span class="tag">VAD</span>
+        <span class="tag">speaker diarisation</span>
+        <span class="tag">ASR</span>
+        <span class="tag">voice-profile embeddings</span>
+      </div>
+    </div>
+    <div class="stack-row">
+      <span class="stack-label">Infrastructure</span>
+      <div class="tags">
+        <span class="tag">FastAPI</span>
+        <span class="tag">Redis</span>
+        <span class="tag">Docker</span>
+        <span class="tag">AWS</span>
+        <span class="tag">queue-based async</span>
+      </div>
+    </div>
+    <div class="stack-row">
+      <span class="stack-label">Low-level</span>
+      <div class="tags">
+        <span class="tag">CUDA</span>
+        <span class="tag">C/C++</span>
+        <span class="tag">parallel programming</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- MORE -->
+  <section>
+    <h2>More</h2>
+    <div class="more-item">Hackathon winner &times;10 — OMI Bangalore, Indo-Japan @ IIT Gandhinagar, Hack This Fall, and others</div>
+    <div class="more-item">IEEE: <a href="https://ieeexplore.ieee.org" target="_blank" rel="noopener">APBTMS</a> — computer vision for real-time bus passenger tracking and overcrowding detection, 2024</div>
+    <div class="more-item">Cohere AI Gujarati LLM — top contributor to dataset creation and curation for a low-resource Indian language model</div>
+    <div class="more-item">Currently exploring: <a href="https://github.com/01PrathamS/concurrency-chaos" target="_blank" rel="noopener">concurrency-chaos</a> — threads, async, queues, Redis, event-driven systems</div>
+    <div class="more-item">Reading: <a href="https://www.goodreads.com/user/show/190712080-pratham-savaliya" target="_blank" rel="noopener">Goodreads</a> &nbsp;&middot;&nbsp; Hack demos: <a href="https://www.youtube.com/@PrathamHacks-dn4wx" target="_blank" rel="noopener">YouTube</a></div>
+  </section>
+
+  <footer>
+    Throw me one of the hardest problems you're working on.
+  </footer>
+
+</div>
+</body>
+</html>
