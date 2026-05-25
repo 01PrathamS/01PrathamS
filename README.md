@@ -66,6 +66,5 @@ Cross-lingual embedding alignment (English ↔ Hindi/Gujarati): Procrustes align
 
 ---
 
-Throw me one of the hardest problems you're working on.
 
 [pratham.savaliya01@gmail.com](mailto:pratham.savaliya01@gmail.com) · [LinkedIn](https://linkedin.com/in/pratham-savaliya) · [helpish.xyz](https://helpish.xyz)
